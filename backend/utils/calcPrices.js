@@ -7,11 +7,9 @@ export function calcPrices(orderItems) {
   const itemsPrice = addDecimals(
     orderItems.reduce((acc, item) => acc + item.price * item.qty, 0)
   );
- 
   // Calculate the total price
   const totalPrice = (
-    Number(itemsPrice) +
-    Number(taxPrice)
+    Number(itemsPrice) 
   ).toFixed(2);
-  return { itemsPrice, shippingPrice, taxPrice, totalPrice };
+  return { itemsPrice, totalPrice };
 }

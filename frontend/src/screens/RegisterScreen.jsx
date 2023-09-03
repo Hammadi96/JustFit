@@ -49,49 +49,49 @@ const RegisterScreen = () => {
 
   return (
     <FormContainer>
-      <h1>Register</h1>
+      <h1>اشترك معنا</h1>
       <Form onSubmit={submitHandler}>
         <Form.Group className="my-2" controlId="name">
-          <Form.Label>Name</Form.Label>
+          <Form.Label>الاسم</Form.Label>
           <Form.Control
             type="name"
-            placeholder="Enter name"
+            placeholder="ادخل اسمك الثلاثي"
             value={name}
             onChange={(e) => setName(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
         <Form.Group className="my-2" controlId="phoneNumber">
-          <Form.Label>Phone Number </Form.Label>
+          <Form.Label>رقم الهاتف </Form.Label>
           <Form.Control
             type="phoneNumber"
-            placeholder="Enter phone number"
+            placeholder="ادخل رقم هاتفك"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
         <Form.Group className="my-2" controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label>كلمة المرور</Form.Label>
           <Form.Control
             type="password"
-            placeholder="Enter password"
+            placeholder="ادخل كلمة المرور الخاصة بك"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
         <Form.Group className="my-2" controlId="confirmPassword">
-          <Form.Label>Confirm Password</Form.Label>
+          <Form.Label>تأكيد كلمة المرور</Form.Label>
           <Form.Control
             type="password"
-            placeholder="Confirm password"
+            placeholder="قم بتأكييد كلمة المرور"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           ></Form.Control>
         </Form.Group>
 
         <Button disabled={isLoading} type="submit" variant="primary">
-          Register
+          سجل
         </Button>
 
         {isLoading && <Loader />}
@@ -99,9 +99,9 @@ const RegisterScreen = () => {
 
       <Row className="py-3">
         <Col>
-          Already have an account?{" "}
+          زبون سابق?{" "}
           <Link to={redirect ? `/login?redirect=${redirect}` : "/login"}>
-            Login
+            قم بتسجيل الدخول
           </Link>
         </Col>
       </Row>

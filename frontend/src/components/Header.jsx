@@ -89,10 +89,10 @@ const Header = () => {
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id="username">
                   <LinkContainer to="/profile">
-                    <NavDropdown.Item>Profile</NavDropdown.Item>
+                    <NavDropdown.Item>الصفحة الشخصية</NavDropdown.Item>
                   </LinkContainer>
                   <NavDropdown.Item onClick={logoutHandler}>
-                    Logout
+                    تسجيل الخروج
                   </NavDropdown.Item>
                 </NavDropdown>
               ) : (
@@ -101,6 +101,20 @@ const Header = () => {
                     <FaUser /> تسجيل الدخول
                   </Nav.Link>
                 </LinkContainer>
+              )}
+              {/* Admin Links */}
+              {userInfo && userInfo.isAdmin && (
+                <NavDropdown title="قائمة المسؤول" id="adminmenu">
+                  <LinkContainer to="/admin/productlist">
+                    <NavDropdown.Item>المنتجات</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to="/admin/orderlist">
+                    <NavDropdown.Item>الطلبات</NavDropdown.Item>
+                  </LinkContainer>
+                  <LinkContainer to="/admin/userlist">
+                    <NavDropdown.Item>الزبائن</NavDropdown.Item>
+                  </LinkContainer>
+                </NavDropdown>
               )}
             </Nav>
           </Navbar.Collapse>

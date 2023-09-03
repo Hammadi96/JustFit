@@ -2060,7 +2060,7 @@ progress {
 
 .table-dark {
   --bs-table-color: #000;
-  --bs-table-bg: #857b8b;
+  --bs-table-bg: #7b8a8b;
   --bs-table-border-color: #6f7c7d;
   --bs-table-striped-bg: #758384;
   --bs-table-striped-color: #000;
@@ -3501,10 +3501,10 @@ fieldset:disabled .btn {
   --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
   --bs-dropdown-link-active-color: #fff;
   --bs-dropdown-link-active-bg: #3c4c5d;
-  --bs-dropdown-link-disabled-color: #7e7b8b;
+  --bs-dropdown-link-disabled-color: #7b8a8b;
   --bs-dropdown-item-padding-x: 1.2rem;
   --bs-dropdown-item-padding-y: 0.3rem;
-  --bs-dropdown-header-color: #8b827b;
+  --bs-dropdown-header-color: #7b8a8b;
   --bs-dropdown-header-padding-x: 1.2rem;
   --bs-dropdown-header-padding-y: 0.5rem;
   position: absolute;
@@ -4459,7 +4459,7 @@ fieldset:disabled .btn {
   --bs-card-border-color: var(--bs-border-color-translucent);
   --bs-card-border-radius: var(--bs-border-radius);
   --bs-card-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
-    0 2px 4px rgba(239, 11, 11, 0.06);
+    0 2px 4px rgba(255, 20, 20, 0.06);
   --bs-card-inner-border-radius: calc(
     var(--bs-border-radius) - (var(--bs-border-width))
   );
@@ -12117,47 +12117,4 @@ fieldset:disabled .btn {
   .d-print-none {
     display: none !important;
   }
-}
-.navbar {
-  background-color: #85b167;
-  font-family: 'Arial', sans-serif;
-}
-
-.nav-link,
-.navbar-brand,
-.dropdown-item {
-  font-size: 18px;
-  color: #0c0c0c;
-}
-
-.footer-container {
-  margin-top: 15px; /* adjust the value as needed */
-  padding-top: 5px;
-  background-color: #f5f9f1;
-}
-
-.footer-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100px;
-  margin-top: 10px;
-}
-
-.social-icons a i {
-  font-size: 24px;
-  color: #333;
-}
-
-.address-col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
